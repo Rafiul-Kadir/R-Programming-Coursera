@@ -9,8 +9,6 @@ Computing the inverse of a square matrix can be done with the solve function in 
 
 For this assignment, assume that the matrix supplied is always invertible.
 
-## Put comments here that give an overall description of what your
-## functions do
 
 ## Write a short comment describing this function
 
@@ -35,8 +33,6 @@ makeCacheMatrix <- function(x = matrix()) {           ##define the arguement wit
 }
 
 
-## Write a short comment describing this function
-
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 
@@ -44,10 +40,10 @@ cacheSolve <- function(x, ...) {
   if(!is.null(j)){
     message("getting cached data")
     return(j)
-  }
+   }
   mat <- x$get()
   j <- solve(mat,...)
-  x$setInverse(j)
+    x$setInverse(j)
   j
 
 
